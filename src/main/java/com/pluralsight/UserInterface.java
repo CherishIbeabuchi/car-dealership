@@ -61,7 +61,9 @@ public class UserInterface {
             System.out.println("9 - Remove a vehicle");
             System.out.println("10 - Sell/Lease a Vehicle");
             System.out.println("99 - Quit");
+            System.out.println();
             System.out.print("Enter option: ");
+            System.out.println("\n");
 
             int userChoice = cScans.nextInt();
             cScans.nextLine();
@@ -111,6 +113,7 @@ public class UserInterface {
     }
     public void processGetByPriceRequest() {
         System.out.println("Minimum price: ");
+        System.out.println();
         BigDecimal min = cScans.nextBigDecimal();
 
         System.out.println("Maximum price: ");
